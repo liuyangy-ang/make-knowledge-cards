@@ -1,0 +1,18 @@
+interface:
+  display_name: "Make Knowledge Cards"
+  short_description: "Turn text into source-grounded study cards"
+  default_prompt: "Use $make-knowledge-cards to turn this text or local Markdown/TXT file into knowledge cards."
+tool:
+  name: "make_knowledge_cards"
+  description: "Create 5–8 grounded knowledge cards from pasted text or a local Markdown/TXT file."
+  parameters:
+    type: "object"
+    properties:
+      text:
+        type: "string"
+        description: "Article content pasted by the user."
+      file_path:
+        type: "string"
+        description: "Path to a local .md or .txt file."
+    required: []
+    additionalProperties: false
